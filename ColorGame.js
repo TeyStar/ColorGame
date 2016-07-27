@@ -66,7 +66,7 @@ for (var i = squares.length - 1; i >= 0; i--) {
 	squares[i].style.background = colors[i];
 
 	squares[i].addEventListener("click", function(){
-		var clickedColor = this.style.background;
+		var clickedColor = this.style["background-color"];
 		if (clickedColor === pickedColor){
 			changeColors(pickedColor);
 			messageDisplay.textContent = "Correct!";
